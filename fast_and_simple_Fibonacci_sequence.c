@@ -30,7 +30,7 @@ int main() {
 		printf("%c", ans);
 		while (getchar() != '\n');//clear the buffer
 		while (ans != 'y' && ans != 'n') {
-			printf("\nInvalid input. Please enter 'y' or 'n' and press enter : ");
+			printf("\nInvalid input. Please enter 'y' or 'n' and presss enter : ");
 			scanf_s("%c", &ans);// if your compiler allows it, you can do it with scanf() as well
 		}
 	}
@@ -78,7 +78,7 @@ int scaler(void) { // returns last possible term number which is in the range of
 int getTermNum(int max) {// gets term number with good safety
 	int term;
 	while (1) {
-		printf("\n >> Enter the last number of sequense term and pres Enter (MAX = %d) : ", max);
+		printf("\n >> Enter the last number of sequense term and press Enter (MAX = %d) : ", max);
 		int resultCheck = scanf("%d", &term);
 		if (resultCheck == EOF) {
 			printf("\nInput terminated by user. Exiting...\n");
